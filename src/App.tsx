@@ -1,17 +1,20 @@
-import { Tab, Tabs } from 'react-bootstrap';
+import { Container, Tab, Tabs } from 'react-bootstrap';
 import "./App.scss"
 import MyAlerts from './MyAlerts';
 
 function App() {
     return (
-        <Tabs defaultActiveKey="My Alerts">
-            <Tab title="My Alerts" eventKey="My Alerts">
-                <MyAlerts/>
-            </Tab>
-            <Tab title="All Alerts" eventKey="All Alerts">
+        <Container id='app'>
+            <h1>Red Alert Viewer</h1>
+            <Tabs defaultActiveKey="My Alerts" fill>
+                <Tab title="My Alerts" eventKey="My Alerts">
+                    <MyAlerts/>
+                </Tab>
+                <Tab title="All Alerts" eventKey="All Alerts">
 
-            </Tab>
-        </Tabs>
+                </Tab>
+            </Tabs>
+        </Container>
     )
 }
 
