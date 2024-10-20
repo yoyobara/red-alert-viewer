@@ -1,9 +1,17 @@
-import Button from 'react-bootstrap/Button';
+import { Tab, Tabs } from 'react-bootstrap';
 import "./App.scss"
+import MyAlerts from './MyAlerts';
 
 function App() {
     return (
-        <Button variant='primary'>Click Me!</Button>
+        <Tabs defaultActiveKey="My Alerts">
+            <Tab title="My Alerts" eventKey="My Alerts">
+                <MyAlerts/>
+            </Tab>
+            <Tab title="All Alerts" eventKey="All Alerts">
+
+            </Tab>
+        </Tabs>
     )
 }
 
