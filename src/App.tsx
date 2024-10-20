@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
+import Button from 'react-bootstrap/Button';
+import "./App.scss"
 
 function App() {
     return (
-        <div>hello!</div>
+        <Button variant='primary'>Click Me!</Button>
     )
 }
 
